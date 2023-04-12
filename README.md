@@ -1,1 +1,4 @@
-# CI-CD-with-Cloud-Services
+# CI/CD with AWS Cloud Services
+
+* Tech Stack:
+
