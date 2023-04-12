@@ -10,7 +10,8 @@
 
 ## Tasks
 1. Create and Containerize the App
-[App]9https://github.com/Mregojos/CI-CD-with-Cloud-Services/tree/main/app)
+
+[App](https://github.com/Mregojos/CI-CD-with-Cloud-Services/tree/main/app)
 
 2. Create a Database on EC2
 
