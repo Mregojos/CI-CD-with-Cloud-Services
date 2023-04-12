@@ -23,7 +23,7 @@ docker run --name my-postgres -p 5000:5432 -e POSTGRES_USER=<user> -e POSTGRES_P
 
 # pgAdmin
 docker pull dpage/pgadmin4
-docker run --name pgadmin -d -p 8080:80 -e "PGADMIN_DEFAULT_EMAIL=<name>@example.com" -e "PGADMIN_DEFAULT_PASSWORD=<password>" dpage/pgadmin4
+docker run --name pgadmin -d -p 8080:80 -e "PGADMIN_DEFAULT_EMAIL=<email address>" -e "PGADMIN_DEFAULT_PASSWORD=<password>" dpage/pgadmin4
 ```
 
 b. Open pgAdmin
