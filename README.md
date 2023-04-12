@@ -62,4 +62,58 @@ Register this task definition
 aws ecs register-task-definition --cli-input-json file://taskdef.json
 ```
 
-7. 
+[appspec.yaml](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/code/appspec.yaml)
+
+Push taskdef.json and appspec.yaml to CodeCommit Repository
+```sh
+git clone <CodeCommit https>
+cd <repo>
+git add -a
+git commit -m "task definitions"
+git push
+```
+
+7. Create Application Load Balancer and Target Groups
+
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/7-a.png)
+
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/7-b.png)
+
+8. Create Amazon ECS Cluster and Service
+
+a. Create Amazon ECS Cluster
+![Amazon ECS Cluster](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/8-a.png)
+
+b. Create Amazon ECS Service
+
+[Create Service](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/code/create-service.json)
+
+```sh
+aws ecs create-service --service-name app-service --cli-input-json file://create-service.json
+```
+
+9. Create Code Deployment
+
+a. Create a CodeDeploy application
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/9-a.png)
+
+b. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Reference
+
+* [Task Definition](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-ecs-ecr-codedeploy.html#tutorials-ecs-ecr-codedeploy-taskdefinition)
