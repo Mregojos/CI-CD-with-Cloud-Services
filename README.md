@@ -105,6 +105,7 @@ b. Create a deployment group
   ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/9-bii.png)
   
 10. Create the Pipeline and check if the pipeline is working
+
 a. Check the Pipeline
 ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-ai.png)
 ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-aii.png)
