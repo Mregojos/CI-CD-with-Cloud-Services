@@ -54,7 +54,8 @@ docker push <ECR Repo>/app:latest
 ![CodeCommit Repository](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/5.png)
 
 6. Create a task definition and AppSec source files
-![taksdef.json](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/code/taskdef.json)
+
+[taksdef.json](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/code/taskdef.json)
 
 Register this task definition
 ```sh
