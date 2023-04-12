@@ -1,6 +1,6 @@
 # CI/CD with AWS Cloud Services
 
-* Tech Stack: AWS, CodePipeline
+* Tech Stack: AWS, EC2, PostgreSQL, CodeCommit, ECR, CodePipeline, CodeDeploy, ECS, Load Balancer
 
 ## Objective
 * Build a CI/CD Pipeline and Deploy an app using AWS Cloud Services
@@ -109,19 +109,41 @@ a. Check the Pipeline
 ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-ai.png)
 ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-aii.png)
 
+b. See the Web App (Use Application Load Balancer DNS Name)
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-b.png)
 
+c. Add a note and see the added note
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-ci.png)
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-cii.png)
 
+11. Update the Web App UI and Push it to the ECR
+a. Push the second version of the Web App (with delete functionality) to ECR
+```sh
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS ID>.dkr.ecr.us-east-1.amazonaws.com
+docker build -t app .
+docker tag app:latest <AWS ID>.dkr.ecr.us-east-1.amazonaws.com/app:latest
+docker push <AWS ID>.dkr.ecr.us-east-1.amazonaws.com/app:latest
+```
 
+b. Check the Pipeline
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/11-b.png)
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/11-bii.png)
 
+c. See the Web App again (Use Application Load Balancer DNS Name)
+d. Add a note and delete the note
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/11-di.png)
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/11-dii.png)
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/11-diii.png)
 
+> It's successfully deleted!
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/11-div.png)
 
+12. Check the database if the data stored correctly
+a. Go to pgAdmin
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/12-ai.png)
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/12-aii.png)
 
-
-
-
-
-
-
+13. Clean up
 
 ### Reference
 
