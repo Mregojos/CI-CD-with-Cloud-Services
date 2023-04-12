@@ -3,6 +3,6 @@
 * Tech Stack: AWS, CodePipeline
 
 ## Objective
-* Deploy an app using AWS Cloud Services
+* Build a CI/CD Pipeline and Deploy an app using AWS Cloud Services
 
 ## Tasks
