@@ -19,11 +19,11 @@ a. Create a Database using Docker
 ```sh
 # PostgreSQL
 docker pull postgres
-docker run --name my-postgres -p 5000:5432 -e POSTGRES_USER=matt -e POSTGRES_PASSWORD=password -d postgres
+docker run --name my-postgres -p 5000:5432 -e POSTGRES_USER=<user> -e POSTGRES_PASSWORD=<password> -d postgres
 
 # pgAdmin
 docker pull dpage/pgadmin4
-docker run --name pgadmin -d -p 8080:80 -e "PGADMIN_DEFAULT_EMAIL=matt@example.com" -e "PGADMIN_DEFAULT_PASSWORD=password" dpage/pgadmin4
+docker run --name pgadmin -d -p 8080:80 -e "PGADMIN_DEFAULT_EMAIL=<name>@example.com" -e "PGADMIN_DEFAULT_PASSWORD=<password>" dpage/pgadmin4
 ```
 
 b. Open pgAdmin
