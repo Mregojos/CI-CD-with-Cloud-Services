@@ -1,0 +1,29 @@
+{
+    "taskDefinition": "ecs-app:1",
+    "cluster": "ecs-app-cluster",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:<AWS ID>:targetgroup/target-group-1/e58356163cfad040",
+            "containerName": "app",
+            "containerPort": 80
+        }
+    ],
+    "desiredCount": 1,
+    "launchType": "FARGATE",
+    "schedulingStrategy": "REPLICA",
+    "deploymentController": {
+        "type": "CODE_DEPLOY"
+    },
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "<subnet-#1>",
+                "<subnet-#2>"
+            ],
+            "securityGroups": [
+                "<sg>"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    }
+}
