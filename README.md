@@ -97,8 +97,17 @@ aws ecs create-service --service-name app-service --cli-input-json file://create
 a. Create a CodeDeploy application
 ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/9-a.png)
 
-b. 
-
+b. Create a deployment group
+  i. Create IAM for CodeDeploy
+  ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/9-bi.png)
+  
+  ii. Create a deployment group
+  ![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/9-bii.png)
+  
+10. Create the Pipeline and check if the pipeline is working
+a. Check the Pipeline
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-ai.png)
+![](https://github.com/Mregojos/CI-CD-with-Cloud-Services/blob/main/images/10-aii.png)
 
 
 
