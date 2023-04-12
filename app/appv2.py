@@ -1,4 +1,3 @@
-# nano app.py 
 # Version 2
 
 import streamlit as st
